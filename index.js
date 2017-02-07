@@ -24,7 +24,7 @@ var Resource = app.resource = restful.model('voiture', mongoose.Schema({
         constructeur: String,
     }))
     .methods(['get', 'post', 'put', 'delete']);
-
+//On place l'api dans /voitures
 Resource.register(app, '/voitures');
 
 
